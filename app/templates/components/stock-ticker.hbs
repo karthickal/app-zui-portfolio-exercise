@@ -1,0 +1,30 @@
+{{yield}}
+
+<div class="stock-ticker">
+   <div class="row center-block">
+      <div class="col-md-4 center-block">
+         <h3 class="text-center">stock updates</h3>
+         <p class="text-center">so you dont get bored</p>
+         <div class="table-responsive">
+            <table class="table table-striped table-bordered">
+               <thead>
+                  <tr class="active">
+                     <td>#</td>
+                     <td>Company</td>
+                     <td>Points</td>
+                  </tr>
+               </thead>
+               <tbody>
+                  {{#each data as |stock index|}}
+                  <tr>
+                     <td>{{stock.code}}</td>
+                     <td>{{stock.company}}</td>
+                     <td>{{stock.points}}</td>
+                  </tr>
+                  {{/each}}
+               </tbody>
+            </table>
+         </div>
+      </div>
+   </div>
+</div>

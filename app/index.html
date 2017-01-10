@@ -1,25 +1,37 @@
 <!DOCTYPE html>
+<!DOCTYPE html><!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>PortfolioEmber</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>My Portfolio</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    {{content-for "head"}}
+  {{content-for "head"}}
 
-    <link rel="stylesheet" href="{{rootURL}}assets/vendor.css">
-    <link rel="stylesheet" href="{{rootURL}}assets/portfolio-ember.css">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{{rootURL}}assets/vendor.css">
+  <link rel="stylesheet" href="{{rootURL}}assets/portfolio-ember.css">
 
-    {{content-for "head-footer"}}
-  </head>
-  <body>
-    {{content-for "body"}}
+  {{content-for "head-footer"}}
+</head>
+<body>
+<div class="container">
+  <div class="heading">
+    <h1>my portfolio</h1>
+    <p class="lead">welcome to my portfolio website</p>
+    <hr/>
+    <p>here you can browse through all of my recent work</p>
+  </div>
+</div>
 
-    <script src="{{rootURL}}assets/vendor.js"></script>
-    <script src="{{rootURL}}assets/portfolio-ember.js"></script>
+{{content-for "body"}}
 
-    {{content-for "body-footer"}}
-  </body>
+<script src="{{rootURL}}assets/vendor.js"></script>
+<script src="{{rootURL}}assets/portfolio-ember.js"></script>
+
+{{content-for "body-footer"}}
+</body>
 </html>

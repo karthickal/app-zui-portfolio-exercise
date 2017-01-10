@@ -1,0 +1,19 @@
+.heading {
+  text-align: center;
+  padding-top: 40px;
+}
+
+.section-title {
+  background-color: #e6e6e6;
+  margin: 20px 0;
+  padding:20px 0;
+}
+
+.portfolio .img-responsive {
+    margin: 0 auto;
+}
+
+.stock-ticker {
+	border: 1px solid #e6e6e6;
+}
+

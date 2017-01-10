@@ -6,7 +6,10 @@ const Router = Ember.Router.extend({
   rootURL: config.rootURL
 });
 
+// add two routes for portfolio and the main page
 Router.map(function() {
+	this.route('index', {path: '/'});
+  	this.route('portfolio');
 });
 
 export default Router;

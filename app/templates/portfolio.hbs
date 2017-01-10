@@ -1,0 +1,23 @@
+<div>
+  <p class="text-center">{{#link-to "index" class='btn btn-primary'}}Go Back{{/link-to}}</p>
+</div>
+
+{{stock-ticker data=stock}}
+
+<div class="section-title">
+    <h4 class="text-center">Collection of Work</h4>
+</div>
+
+<div class="container">
+    <div class="row">
+      {{#each portfolio as |item|}}
+          <div class="col-md-4 portfolio">
+              <h3 class="text-center">{{item.title}}</h3>
+              <img src="{{item.image}}" class="img-responsive center" style="height: 200px">
+              <br/>
+              <p class="lead text-center">{{item.description}} </p>
+              <p class="text-center"><a class="btn btn-default" href="{{item.link}}" role="button">View Page</a></p>
+          </div>
+      {{/each}}
+    </div>
+</div>
